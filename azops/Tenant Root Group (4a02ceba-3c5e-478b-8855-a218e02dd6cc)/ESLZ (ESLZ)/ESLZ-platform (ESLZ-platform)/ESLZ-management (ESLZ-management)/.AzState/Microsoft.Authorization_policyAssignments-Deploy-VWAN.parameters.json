@@ -1,0 +1,34 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Identity": {
+          "type": "SystemAssigned"
+        },
+        "Location": "canadacentral",
+        "Name": "Deploy-VWAN",
+        "Properties": {
+          "Description": null,
+          "DisplayName": "Deploy-vWAN",
+          "NotScopes": null,
+          "Parameters": {
+            "rgName": {
+              "value": "ESLZ-Global-WAN"
+            },
+            "vwanname": {
+              "value": "ESLZ-vwan"
+            },
+            "vwanRegion": {
+              "value": "canadacentral"
+            }
+          },
+          "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/ESLZ/providers/Microsoft.Authorization/policyDefinitions/Deploy-vWAN",
+          "Scope": "/providers/Microsoft.Management/managementGroups/ESLZ-management"
+        },
+        "ResourceType": "Microsoft.Authorization/policyAssignments"
+      }
+    }
+  }
+}
