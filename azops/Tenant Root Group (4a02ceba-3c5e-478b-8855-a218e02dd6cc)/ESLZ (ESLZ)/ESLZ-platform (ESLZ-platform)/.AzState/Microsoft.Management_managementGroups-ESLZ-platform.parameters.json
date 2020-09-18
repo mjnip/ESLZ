@@ -1,0 +1,58 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/ESLZ-platform",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "ESLZ-platform",
+        "TenantId": "4a02ceba-3c5e-478b-8855-a218e02dd6cc",
+        "DisplayName": "ESLZ-platform",
+        "UpdatedTime": "0001-01-01T00:00:00Z",
+        "UpdatedBy": null,
+        "ParentId": "/providers/Microsoft.Management/managementGroups/ESLZ",
+        "ParentName": "ESLZ",
+        "ParentDisplayName": "ESLZ",
+        "Children": [
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/ESLZ-management",
+            "Name": "ESLZ-management",
+            "DisplayName": "ESLZ-management",
+            "Children": [
+              {
+                "Type": "/subscriptions",
+                "Id": "/subscriptions/06867d06-c4c7-47f1-a065-1aa3f882cdc2",
+                "Name": "06867d06-c4c7-47f1-a065-1aa3f882cdc2",
+                "DisplayName": "Visual Studio Enterprise Subscription",
+                "Children": null
+              }
+            ]
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/ESLZ-identity",
+            "Name": "ESLZ-identity",
+            "DisplayName": "ESLZ-identity",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/ESLZ-connectivity",
+            "Name": "ESLZ-connectivity",
+            "DisplayName": "ESLZ-connectivity",
+            "Children": null
+          }
+        ],
+        "properties": {
+          "policyDefinitions": [],
+          "policySetDefinitions": [],
+          "policyAssignments": [],
+          "roleDefinitions": [],
+          "roleAssignments": []
+        }
+      }
+    }
+  }
+}
