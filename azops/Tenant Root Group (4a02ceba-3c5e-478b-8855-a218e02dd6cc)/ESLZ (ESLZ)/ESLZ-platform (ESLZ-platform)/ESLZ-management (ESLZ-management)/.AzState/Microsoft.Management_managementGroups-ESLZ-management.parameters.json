@@ -29,6 +29,83 @@
           "policyAssignments": [
             {
               "Identity": {
+                "principalId": "59bc3683-2e43-44fa-8c03-d9a1dcfb094c",
+                "tenantId": "4a02ceba-3c5e-478b-8855-a218e02dd6cc",
+                "type": "SystemAssigned"
+              },
+              "Location": "canadacentral",
+              "Name": "Deploy-FirewallPolicy",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/ESLZ-management/providers/Microsoft.Authorization/policyAssignments/Deploy-FirewallPolicy",
+              "Properties": {
+                "Description": null,
+                "DisplayName": "Deploy-FirewallPolicy",
+                "NotScopes": null,
+                "Parameters": {
+                  "fwpolicy": {
+                    "value": {
+                      "firewallPolicyName": "eslz-fw-policy-global",
+                      "location": "canadacentral",
+                      "ruleGroups": {
+                        "name": "DefaultApplicationRuleCollectionGroup",
+                        "properties": {
+                          "priority": 300,
+                          "rules": [
+                            {
+                              "name": "rule-collection-01",
+                              "priority": 100,
+                              "ruleType": "FirewallPolicyFilterRule",
+                              "action": {
+                                "type": "Allow"
+                              },
+                              "ruleConditions": [
+                                {
+                                  "name": "allow-internet",
+                                  "protocols": [
+                                    {
+                                      "protocolType": "http",
+                                      "port": 80
+                                    },
+                                    {
+                                      "protocolType": "https",
+                                      "port": 443
+                                    }
+                                  ],
+                                  "sourceAddresses": [
+                                    "*"
+                                  ],
+                                  "targetFqdns": [
+                                    "*"
+                                  ],
+                                  "fqdnTags": [],
+                                  "ruleConditionType": "ApplicationRuleCondition"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  },
+                  "fwPolicyRegion": {
+                    "value": "canadacentral"
+                  },
+                  "rgName": {
+                    "value": "contoso-fw-policies"
+                  }
+                },
+                "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/ESLZ/providers/Microsoft.Authorization/policyDefinitions/Deploy-FirewallPolicy",
+                "Scope": "/providers/Microsoft.Management/managementGroups/ESLZ-management"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/ESLZ-management/providers/Microsoft.Authorization/policyAssignments/Deploy-FirewallPolicy",
+              "ResourceName": "Deploy-FirewallPolicy",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            },
+            {
+              "Identity": {
                 "principalId": "ef2a690c-a7a4-4f6f-ae5f-42970ea5d60f",
                 "tenantId": "4a02ceba-3c5e-478b-8855-a218e02dd6cc",
                 "type": "SystemAssigned"
@@ -62,6 +139,41 @@
               },
               "ResourceId": "/providers/Microsoft.Management/managementGroups/ESLZ-management/providers/Microsoft.Authorization/policyAssignments/Deploy-Log-Analytics",
               "ResourceName": "Deploy-Log-Analytics",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            },
+            {
+              "Identity": {
+                "principalId": "867ad9f6-db31-4270-b894-21b53847ae84",
+                "tenantId": "4a02ceba-3c5e-478b-8855-a218e02dd6cc",
+                "type": "SystemAssigned"
+              },
+              "Location": "canadacentral",
+              "Name": "Deploy-VWAN",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/ESLZ-management/providers/Microsoft.Authorization/policyAssignments/Deploy-VWAN",
+              "Properties": {
+                "Description": null,
+                "DisplayName": "Deploy-vWAN",
+                "NotScopes": null,
+                "Parameters": {
+                  "rgName": {
+                    "value": "ESLZ-Global-WAN"
+                  },
+                  "vwanname": {
+                    "value": "ESLZ-vwan"
+                  },
+                  "vwanRegion": {
+                    "value": "canadacentral"
+                  }
+                },
+                "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/ESLZ/providers/Microsoft.Authorization/policyDefinitions/Deploy-vWAN",
+                "Scope": "/providers/Microsoft.Management/managementGroups/ESLZ-management"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/ESLZ-management/providers/Microsoft.Authorization/policyAssignments/Deploy-VWAN",
+              "ResourceName": "Deploy-VWAN",
               "ResourceType": "Microsoft.Authorization/policyAssignments",
               "Sku": {
                 "name": "A0",

@@ -5,10 +5,13 @@
     "input": {
       "value": {
         "Identity": {
+          "principalId": "867ad9f6-db31-4270-b894-21b53847ae84",
+          "tenantId": "4a02ceba-3c5e-478b-8855-a218e02dd6cc",
           "type": "SystemAssigned"
         },
         "Location": "canadacentral",
         "Name": "Deploy-VWAN",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/ESLZ-management/providers/Microsoft.Authorization/policyAssignments/Deploy-VWAN",
         "Properties": {
           "Description": null,
           "DisplayName": "Deploy-vWAN",
@@ -27,7 +30,13 @@
           "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/ESLZ/providers/Microsoft.Authorization/policyDefinitions/Deploy-vWAN",
           "Scope": "/providers/Microsoft.Management/managementGroups/ESLZ-management"
         },
-        "ResourceType": "Microsoft.Authorization/policyAssignments"
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/ESLZ-management/providers/Microsoft.Authorization/policyAssignments/Deploy-VWAN",
+        "ResourceName": "Deploy-VWAN",
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "Sku": {
+          "name": "A0",
+          "tier": "Free"
+        }
       }
     }
   }

@@ -5,10 +5,13 @@
     "input": {
       "value": {
         "Identity": {
+          "principalId": "59bc3683-2e43-44fa-8c03-d9a1dcfb094c",
+          "tenantId": "4a02ceba-3c5e-478b-8855-a218e02dd6cc",
           "type": "SystemAssigned"
         },
         "Location": "canadacentral",
         "Name": "Deploy-FirewallPolicy",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/ESLZ-management/providers/Microsoft.Authorization/policyAssignments/Deploy-FirewallPolicy",
         "Properties": {
           "Description": null,
           "DisplayName": "Deploy-FirewallPolicy",
@@ -69,7 +72,13 @@
           "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/ESLZ/providers/Microsoft.Authorization/policyDefinitions/Deploy-FirewallPolicy",
           "Scope": "/providers/Microsoft.Management/managementGroups/ESLZ-management"
         },
-        "ResourceType": "Microsoft.Authorization/policyAssignments"
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/ESLZ-management/providers/Microsoft.Authorization/policyAssignments/Deploy-FirewallPolicy",
+        "ResourceName": "Deploy-FirewallPolicy",
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "Sku": {
+          "name": "A0",
+          "tier": "Free"
+        }
       }
     }
   }
