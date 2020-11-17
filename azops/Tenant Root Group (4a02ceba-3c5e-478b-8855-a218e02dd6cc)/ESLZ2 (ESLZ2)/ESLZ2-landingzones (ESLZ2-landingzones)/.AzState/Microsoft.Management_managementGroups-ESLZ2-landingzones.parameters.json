@@ -1,0 +1,200 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/ESLZ2-landingzones",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "ESLZ2-landingzones",
+        "TenantId": "4a02ceba-3c5e-478b-8855-a218e02dd6cc",
+        "DisplayName": "ESLZ2-landingzones",
+        "UpdatedTime": "0001-01-01T00:00:00Z",
+        "UpdatedBy": null,
+        "ParentId": "/providers/Microsoft.Management/managementGroups/ESLZ2",
+        "ParentName": "ESLZ2",
+        "ParentDisplayName": "ESLZ2",
+        "Children": [
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/ESLZ2-online",
+            "Name": "ESLZ2-online",
+            "DisplayName": "ESLZ2-online",
+            "Children": null
+          }
+        ],
+        "properties": {
+          "policyDefinitions": [],
+          "policySetDefinitions": [],
+          "policyAssignments": [
+            {
+              "Identity": null,
+              "Location": "eastus2",
+              "Name": "Deny-IP-forwarding",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/ESLZ2-landingzones/providers/Microsoft.Authorization/policyAssignments/Deny-IP-forwarding",
+              "Properties": {
+                "Description": "Deny-IP-Forwarding",
+                "DisplayName": "Deny-IP-Forwarding",
+                "NotScopes": null,
+                "Parameters": null,
+                "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/88c0b9da-ce96-4b03-9635-f29a937e2900",
+                "Scope": "/providers/Microsoft.Management/managementGroups/ESLZ2-landingzones"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/ESLZ2-landingzones/providers/Microsoft.Authorization/policyAssignments/Deny-IP-forwarding",
+              "ResourceName": "Deny-IP-forwarding",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            },
+            {
+              "Identity": null,
+              "Location": "eastus2",
+              "Name": "Deny-Storage-http",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/ESLZ2-landingzones/providers/Microsoft.Authorization/policyAssignments/Deny-Storage-http",
+              "Properties": {
+                "Description": "Enforce-Secure-Storage",
+                "DisplayName": "Enforce-Secure-Storage",
+                "NotScopes": null,
+                "Parameters": null,
+                "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/404c3081-a854-4457-ae30-26a93ef643f9",
+                "Scope": "/providers/Microsoft.Management/managementGroups/ESLZ2-landingzones"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/ESLZ2-landingzones/providers/Microsoft.Authorization/policyAssignments/Deny-Storage-http",
+              "ResourceName": "Deny-Storage-http",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            },
+            {
+              "Identity": null,
+              "Location": "eastus2",
+              "Name": "Deny-Subnet-Without-Nsg",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/ESLZ2-landingzones/providers/Microsoft.Authorization/policyAssignments/Deny-Subnet-Without-Nsg",
+              "Properties": {
+                "Description": "Deny-Subnet-Without-Nsg",
+                "DisplayName": "Deny-Subnet-Without-Nsg",
+                "NotScopes": null,
+                "Parameters": null,
+                "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/ESLZ2/providers/Microsoft.Authorization/policyDefinitions/Deny-Subnet-Without-Nsg",
+                "Scope": "/providers/Microsoft.Management/managementGroups/ESLZ2-landingzones"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/ESLZ2-landingzones/providers/Microsoft.Authorization/policyAssignments/Deny-Subnet-Without-Nsg",
+              "ResourceName": "Deny-Subnet-Without-Nsg",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            },
+            {
+              "Identity": {
+                "principalId": "19e3a160-0221-4ecc-9322-1ee352f01926",
+                "tenantId": "4a02ceba-3c5e-478b-8855-a218e02dd6cc",
+                "type": "SystemAssigned"
+              },
+              "Location": "eastus2",
+              "Name": "Deploy-AKS-Policy",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/ESLZ2-landingzones/providers/Microsoft.Authorization/policyAssignments/Deploy-AKS-Policy",
+              "Properties": {
+                "Description": "Deploy-AKS-Policy",
+                "DisplayName": "Deploy-AKS-Policy",
+                "NotScopes": null,
+                "Parameters": null,
+                "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/0a15ec92-a229-4763-bb14-0ea34a568f8d",
+                "Scope": "/providers/Microsoft.Management/managementGroups/ESLZ2-landingzones"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/ESLZ2-landingzones/providers/Microsoft.Authorization/policyAssignments/Deploy-AKS-Policy",
+              "ResourceName": "Deploy-AKS-Policy",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            },
+            {
+              "Identity": {
+                "principalId": "0dd9ff2f-3a69-4dac-8e72-45f21e2dda8a",
+                "tenantId": "4a02ceba-3c5e-478b-8855-a218e02dd6cc",
+                "type": "SystemAssigned"
+              },
+              "Location": "eastus2",
+              "Name": "Deploy-SQL-DB-Auditing",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/ESLZ2-landingzones/providers/Microsoft.Authorization/policyAssignments/Deploy-SQL-DB-Auditing",
+              "Properties": {
+                "Description": "Deploy-SQL-Audit",
+                "DisplayName": "Deploy-SQL-Audit",
+                "NotScopes": null,
+                "Parameters": null,
+                "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/a6fb4358-5bf4-4ad7-ba82-2cd2f41ce5e9",
+                "Scope": "/providers/Microsoft.Management/managementGroups/ESLZ2-landingzones"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/ESLZ2-landingzones/providers/Microsoft.Authorization/policyAssignments/Deploy-SQL-DB-Auditing",
+              "ResourceName": "Deploy-SQL-DB-Auditing",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            },
+            {
+              "Identity": {
+                "principalId": "46b03b1a-de24-4cf0-8a66-a8ffd479b379",
+                "tenantId": "4a02ceba-3c5e-478b-8855-a218e02dd6cc",
+                "type": "SystemAssigned"
+              },
+              "Location": "eastus2",
+              "Name": "Deploy-VM-Backup",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/ESLZ2-landingzones/providers/Microsoft.Authorization/policyAssignments/Deploy-VM-Backup",
+              "Properties": {
+                "Description": "Deploy-VM-Backup",
+                "DisplayName": "Deploy-VM-Backup",
+                "NotScopes": null,
+                "Parameters": {},
+                "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/ESLZ2/providers/Microsoft.Authorization/policyDefinitions/Deploy-AzureBackup-on-VM",
+                "Scope": "/providers/Microsoft.Management/managementGroups/ESLZ2-landingzones"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/ESLZ2-landingzones/providers/Microsoft.Authorization/policyAssignments/Deploy-VM-Backup",
+              "ResourceName": "Deploy-VM-Backup",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            },
+            {
+              "Identity": {
+                "principalId": "7141c0c9-ae12-4532-98b8-596284c9fbd5",
+                "tenantId": "4a02ceba-3c5e-478b-8855-a218e02dd6cc",
+                "type": "SystemAssigned"
+              },
+              "Location": "eastus2",
+              "Name": "Enforce-SQL-Encryption",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/ESLZ2-landingzones/providers/Microsoft.Authorization/policyAssignments/Enforce-SQL-Encryption",
+              "Properties": {
+                "Description": "Deploy-SQL-Security",
+                "DisplayName": "Deploy-SQL-Security",
+                "NotScopes": null,
+                "Parameters": null,
+                "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/86a912f6-9a06-4e26-b447-11b16ba8659f",
+                "Scope": "/providers/Microsoft.Management/managementGroups/ESLZ2-landingzones"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/ESLZ2-landingzones/providers/Microsoft.Authorization/policyAssignments/Enforce-SQL-Encryption",
+              "ResourceName": "Enforce-SQL-Encryption",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            }
+          ],
+          "roleDefinitions": [],
+          "roleAssignments": []
+        }
+      }
+    }
+  }
+}

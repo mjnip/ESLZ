@@ -1,0 +1,33 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Identity": {
+          "principalId": "19e3a160-0221-4ecc-9322-1ee352f01926",
+          "tenantId": "4a02ceba-3c5e-478b-8855-a218e02dd6cc",
+          "type": "SystemAssigned"
+        },
+        "Location": "eastus2",
+        "Name": "Deploy-AKS-Policy",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/ESLZ2-landingzones/providers/Microsoft.Authorization/policyAssignments/Deploy-AKS-Policy",
+        "Properties": {
+          "Description": "Deploy-AKS-Policy",
+          "DisplayName": "Deploy-AKS-Policy",
+          "NotScopes": null,
+          "Parameters": null,
+          "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/0a15ec92-a229-4763-bb14-0ea34a568f8d",
+          "Scope": "/providers/Microsoft.Management/managementGroups/ESLZ2-landingzones"
+        },
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/ESLZ2-landingzones/providers/Microsoft.Authorization/policyAssignments/Deploy-AKS-Policy",
+        "ResourceName": "Deploy-AKS-Policy",
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "Sku": {
+          "name": "A0",
+          "tier": "Free"
+        }
+      }
+    }
+  }
+}

@@ -69,15 +69,7 @@
                 "Id": "/providers/Microsoft.Management/managementGroups/ESLZ-management",
                 "Name": "ESLZ-management",
                 "DisplayName": "ESLZ-management",
-                "Children": [
-                  {
-                    "Type": "/subscriptions",
-                    "Id": "/subscriptions/06867d06-c4c7-47f1-a065-1aa3f882cdc2",
-                    "Name": "06867d06-c4c7-47f1-a065-1aa3f882cdc2",
-                    "DisplayName": "Visual Studio Enterprise Subscription",
-                    "Children": null
-                  }
-                ]
+                "Children": null
               },
               {
                 "Type": "/providers/Microsoft.Management/managementGroups",

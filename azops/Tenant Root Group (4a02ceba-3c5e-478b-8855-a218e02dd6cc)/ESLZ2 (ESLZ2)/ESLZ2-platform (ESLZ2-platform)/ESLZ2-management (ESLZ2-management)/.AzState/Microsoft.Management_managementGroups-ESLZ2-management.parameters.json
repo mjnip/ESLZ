@@ -1,0 +1,81 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/ESLZ2-management",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "ESLZ2-management",
+        "TenantId": "4a02ceba-3c5e-478b-8855-a218e02dd6cc",
+        "DisplayName": "ESLZ2-management",
+        "UpdatedTime": "0001-01-01T00:00:00Z",
+        "UpdatedBy": null,
+        "ParentId": "/providers/Microsoft.Management/managementGroups/ESLZ2-platform",
+        "ParentName": "ESLZ2-platform",
+        "ParentDisplayName": "ESLZ2-platform",
+        "Children": [
+          {
+            "Type": "/subscriptions",
+            "Id": "/subscriptions/06867d06-c4c7-47f1-a065-1aa3f882cdc2",
+            "Name": "06867d06-c4c7-47f1-a065-1aa3f882cdc2",
+            "DisplayName": "Visual Studio Enterprise Subscription",
+            "Children": null
+          }
+        ],
+        "properties": {
+          "policyDefinitions": [],
+          "policySetDefinitions": [],
+          "policyAssignments": [
+            {
+              "Identity": {
+                "principalId": "ce2001ac-dd39-4808-a7d1-afbd38384b30",
+                "tenantId": "4a02ceba-3c5e-478b-8855-a218e02dd6cc",
+                "type": "SystemAssigned"
+              },
+              "Location": "eastus2",
+              "Name": "Deploy-Log-Analytics",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/ESLZ2-management/providers/Microsoft.Authorization/policyAssignments/Deploy-Log-Analytics",
+              "Properties": {
+                "Description": "Deploy-Log-Analytics",
+                "DisplayName": "Deploy-Log-Analytics",
+                "NotScopes": null,
+                "Parameters": {
+                  "automationAccountName": {
+                    "value": "ESLZ2-a-06867d06-c4c7-47f1-a065-1aa3f882cdc2"
+                  },
+                  "automationRegion": {
+                    "value": "eastus2"
+                  },
+                  "retentionInDays": {
+                    "value": "30"
+                  },
+                  "rgName": {
+                    "value": "ESLZ2-mgmt"
+                  },
+                  "workspaceName": {
+                    "value": "ESLZ2-la-06867d06-c4c7-47f1-a065-1aa3f882cdc2"
+                  },
+                  "workspaceRegion": {
+                    "value": "eastus2"
+                  }
+                },
+                "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/ESLZ2/providers/Microsoft.Authorization/policyDefinitions/Deploy-Log-Analytics",
+                "Scope": "/providers/Microsoft.Management/managementGroups/ESLZ2-management"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/ESLZ2-management/providers/Microsoft.Authorization/policyAssignments/Deploy-Log-Analytics",
+              "ResourceName": "Deploy-Log-Analytics",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            }
+          ],
+          "roleDefinitions": [],
+          "roleAssignments": []
+        }
+      }
+    }
+  }
+}
