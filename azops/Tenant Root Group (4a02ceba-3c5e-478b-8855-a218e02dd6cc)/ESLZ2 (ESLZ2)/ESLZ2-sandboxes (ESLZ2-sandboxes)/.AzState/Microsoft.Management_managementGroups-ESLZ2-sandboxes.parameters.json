@@ -9,19 +9,12 @@
         "Name": "ESLZ2-sandboxes",
         "TenantId": "4a02ceba-3c5e-478b-8855-a218e02dd6cc",
         "DisplayName": "ESLZ2-sandboxes",
-        "UpdatedTime": "0001-01-01T00:00:00Z",
-        "UpdatedBy": null,
+        "UpdatedTime": "2020-11-16T19:05:15.7749106Z",
+        "UpdatedBy": "b0ae6474-9d4b-4052-ba4e-97cce513ea88",
         "ParentId": "/providers/Microsoft.Management/managementGroups/ESLZ2",
         "ParentName": "ESLZ2",
         "ParentDisplayName": "ESLZ2",
-        "Children": null,
-        "properties": {
-          "policyDefinitions": [],
-          "policySetDefinitions": [],
-          "policyAssignments": [],
-          "roleDefinitions": [],
-          "roleAssignments": []
-        }
+        "Children": null
       }
     }
   }

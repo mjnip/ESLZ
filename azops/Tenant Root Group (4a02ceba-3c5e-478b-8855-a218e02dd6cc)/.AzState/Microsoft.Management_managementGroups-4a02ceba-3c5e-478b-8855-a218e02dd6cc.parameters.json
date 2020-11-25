@@ -9,8 +9,8 @@
         "Name": "4a02ceba-3c5e-478b-8855-a218e02dd6cc",
         "TenantId": "4a02ceba-3c5e-478b-8855-a218e02dd6cc",
         "DisplayName": "Tenant Root Group",
-        "UpdatedTime": "0001-01-01T00:00:00Z",
-        "UpdatedBy": null,
+        "UpdatedTime": "2020-09-18T00:04:55.390493Z",
+        "UpdatedBy": "Tenant Backfill Job",
         "ParentId": null,
         "ParentName": null,
         "ParentDisplayName": null,
@@ -20,140 +20,14 @@
             "Id": "/providers/Microsoft.Management/managementGroups/ESLZ",
             "Name": "ESLZ",
             "DisplayName": "ESLZ",
-            "Children": [
-              {
-                "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/ESLZ-decomissioned",
-                "Name": "ESLZ-decomissioned",
-                "DisplayName": "ESLZ-decomissioned",
-                "Children": null
-              },
-              {
-                "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/ESLZ-sandboxes",
-                "Name": "ESLZ-sandboxes",
-                "DisplayName": "ESLZ-sandboxes",
-                "Children": null
-              },
-              {
-                "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/ESLZ-landingzones",
-                "Name": "ESLZ-landingzones",
-                "DisplayName": "ESLZ-landingzones",
-                "Children": [
-                  {
-                    "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/ESLZ-online",
-                    "Name": "ESLZ-online",
-                    "DisplayName": "ESLZ-online",
-                    "Children": null
-                  },
-                  {
-                    "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/ESLZ-corp",
-                    "Name": "ESLZ-corp",
-                    "DisplayName": "ESLZ-corp",
-                    "Children": null
-                  },
-                  {
-                    "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/ESLZ-sap",
-                    "Name": "ESLZ-sap",
-                    "DisplayName": "ESLZ-sap",
-                    "Children": null
-                  }
-                ]
-              },
-              {
-                "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/ESLZ-platform",
-                "Name": "ESLZ-platform",
-                "DisplayName": "ESLZ-platform",
-                "Children": [
-                  {
-                    "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/ESLZ-management",
-                    "Name": "ESLZ-management",
-                    "DisplayName": "ESLZ-management",
-                    "Children": null
-                  },
-                  {
-                    "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/ESLZ-identity",
-                    "Name": "ESLZ-identity",
-                    "DisplayName": "ESLZ-identity",
-                    "Children": null
-                  },
-                  {
-                    "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/ESLZ-connectivity",
-                    "Name": "ESLZ-connectivity",
-                    "DisplayName": "ESLZ-connectivity",
-                    "Children": null
-                  }
-                ]
-              }
-            ]
+            "Children": null
           },
           {
             "Type": "/providers/Microsoft.Management/managementGroups",
             "Id": "/providers/Microsoft.Management/managementGroups/ESLZ2",
             "Name": "ESLZ2",
             "DisplayName": "ESLZ2",
-            "Children": [
-              {
-                "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/ESLZ2-platform",
-                "Name": "ESLZ2-platform",
-                "DisplayName": "ESLZ2-platform",
-                "Children": [
-                  {
-                    "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/ESLZ2-management",
-                    "Name": "ESLZ2-management",
-                    "DisplayName": "ESLZ2-management",
-                    "Children": [
-                      {
-                        "Type": "/subscriptions",
-                        "Id": "/subscriptions/06867d06-c4c7-47f1-a065-1aa3f882cdc2",
-                        "Name": "06867d06-c4c7-47f1-a065-1aa3f882cdc2",
-                        "DisplayName": "Visual Studio Enterprise Subscription",
-                        "Children": null
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/ESLZ2-decommissioned",
-                "Name": "ESLZ2-decommissioned",
-                "DisplayName": "ESLZ2-decommissioned",
-                "Children": null
-              },
-              {
-                "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/ESLZ2-landingzones",
-                "Name": "ESLZ2-landingzones",
-                "DisplayName": "ESLZ2-landingzones",
-                "Children": [
-                  {
-                    "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/ESLZ2-online",
-                    "Name": "ESLZ2-online",
-                    "DisplayName": "ESLZ2-online",
-                    "Children": null
-                  }
-                ]
-              },
-              {
-                "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/ESLZ2-sandboxes",
-                "Name": "ESLZ2-sandboxes",
-                "DisplayName": "ESLZ2-sandboxes",
-                "Children": null
-              }
-            ]
+            "Children": null
           },
           {
             "Type": "/subscriptions",
@@ -162,14 +36,7 @@
             "DisplayName": "Visual Studio Enterprise with MSDN",
             "Children": null
           }
-        ],
-        "properties": {
-          "policyDefinitions": [],
-          "policySetDefinitions": [],
-          "policyAssignments": [],
-          "roleDefinitions": [],
-          "roleAssignments": []
-        }
+        ]
       }
     }
   }

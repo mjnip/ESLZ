@@ -8,36 +8,7 @@
         "Id": "/subscriptions/06867d06-c4c7-47f1-a065-1aa3f882cdc2",
         "Name": "06867d06-c4c7-47f1-a065-1aa3f882cdc2",
         "DisplayName": "Visual Studio Enterprise Subscription",
-        "Children": null,
-        "properties": {
-          "policyDefinitions": [],
-          "policySetDefinitions": [],
-          "policyAssignments": [
-            {
-              "Identity": null,
-              "Location": null,
-              "Name": "DataProtectionSecurityCenter",
-              "PolicyAssignmentId": "/subscriptions/06867d06-c4c7-47f1-a065-1aa3f882cdc2/providers/Microsoft.Authorization/policyAssignments/DataProtectionSecurityCenter",
-              "Properties": {
-                "Description": "This policy assignment was automatically created by Azure Security Center",
-                "DisplayName": "ASC DataProtection (subscription: 06867d06-c4c7-47f1-a065-1aa3f882cdc2)",
-                "NotScopes": null,
-                "Parameters": null,
-                "PolicyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/9cb3cc7a-b39b-4b82-bc89-e5a5d9ff7b97",
-                "Scope": "/subscriptions/06867d06-c4c7-47f1-a065-1aa3f882cdc2"
-              },
-              "ResourceId": "/subscriptions/06867d06-c4c7-47f1-a065-1aa3f882cdc2/providers/Microsoft.Authorization/policyAssignments/DataProtectionSecurityCenter",
-              "ResourceName": "DataProtectionSecurityCenter",
-              "ResourceType": "Microsoft.Authorization/policyAssignments",
-              "Sku": {
-                "name": "A1",
-                "tier": "Standard"
-              }
-            }
-          ],
-          "roleDefinitions": [],
-          "roleAssignments": []
-        }
+        "Children": null
       }
     }
   }
